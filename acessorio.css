@@ -1,0 +1,234 @@
+.container{
+    background-image: url(fundo.png);
+        margin: 0px;
+        padding: 0px;
+        max-width: 1600px; 
+       margin-top: 0px;    
+        
+       display: grid;
+       grid-template-areas: 
+       "item item item"
+       "item item item"
+       
+       "footer footer footer";
+       grid-gap: 40px;
+    }
+
+    body{
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+      margin-top: 0;
+    background: #000;;
+    }
+      
+    .borda{
+  
+        margin: 0;
+        padding: 0;
+        height: 2000px;
+    }
+    .counter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0 auto;
+        }
+    .imagemzoom{
+        transition: all 1.5s;
+        cursor: pointer;
+    }
+
+    .imagemzoom:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.03);
+    }
+
+    h1{
+        text-align: center;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       color: rgb(255, 255, 255);
+     }
+     h4{
+ 
+ text-align: justify;
+ padding-left: 30px;
+     }
+
+
+    .inter{
+        width: 100%;
+        height: 57px;
+        background: rgb(0,0,0);
+      background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(10,27,36,1) 0%, rgba(4,13,18,1) 50%, rgba(0,0,0,1) 88%);
+      margin-top: 0px;
+        
+      
+        }
+    .icon{
+
+        padding-left: 10px;
+        margin-left: 10px;
+        
+          }
+    .caixas{
+        margin-top: 20px;
+        margin-left: 12px;
+        height: 300px;
+        width: 300px;
+        background: linear-gradient(270deg, #246655, #04291f);
+        background-size: 400% 400%;
+    
+        -webkit-animation: AnimationName 20s ease infinite;
+        -moz-animation: AnimationName 20s ease infinite;
+        animation: AnimationName 20s ease infinite;
+    }
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:20% 0%}
+        50%{background-position:81% 100%}
+        100%{background-position:20% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:20% 0%}
+        50%{background-position:81% 100%}
+        100%{background-position:20% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:20% 0%}
+        50%{background-position:81% 100%}
+        100%{background-position:20% 0%}
+    }
+        
+    .promo{
+   
+        margin-left: 10px;
+       width: 380px;
+       border-radius: 15px;
+       margin-top: 15px;
+   }
+    .item{
+        width: 400px;
+        height: 400px;
+        background-color: solid rgb(0, 0, 0);
+        border-radius: 20px;
+    grid-area: "item";
+    }
+    .footer{
+        width: auto;
+        height: 180px;
+        
+        border-radius: 20px;
+    grid-area: "footer";
+    grid-column: footer;
+    background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(10,27,36,1) 0%, rgba(4,13,18,1) 50%, rgba(0,0,0,1) 88%);
+    }
+    .logo{
+        font-size: 40px;
+            width: 23%;
+            color: white;
+            margin-top: 13px;
+            margin-left: 70px;
+        
+        }
+        .imagemlogo{
+            transition: all 1s;
+            cursor: pointer;
+        }
+        
+        .imagemlogo:hover{
+            -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+        }
+        .menu{
+  
+            width: 55%;
+            }
+            .linkstopo{
+                color: #00a2e8;
+                
+                    padding-left: 32px;
+                    font-size: medium;
+                    font-family: "Roboto Condensed", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-decoration: none;
+                    font-optical-sizing: auto;
+                    
+                }
+                @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+                
+                .linkstopos{
+                    color: rgb(255, 251, 251);
+                        padding-left: 62px;
+                        font-size: medium;
+                        font-family: "Roboto Condensed", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        text-decoration: none;
+                        font-optical-sizing: auto;
+                        
+                    }
+                    header{
+                        max-height: 70px;
+                        background: rgb(0,0,0);
+                        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(10,27,36,1) 0%, rgba(4,13,18,1) 50%, rgba(0,0,0,1) 88%);
+                        }
+   .bannerdeitado{
+background-image:url(bannerdelado.png);
+width: 1342px;
+height: 178px; 
+
+}
+.titulobeyblades{
+
+    margin-top: 0px;
+    padding: 15px;
+    font-size: 100px;
+}
+.imagemzoomm{
+    transition: all 1.5s;
+    cursor: pointer;
+}
+
+.vermelho{
+
+color: rgb(32, 141, 123);
+    
+}
+.linkstopoi {
+
+    color: #176dbd;             
+    padding-left: 10px;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-style:normal;
+    text-decoration: none;
+
+}
+
+.footersocial{
+
+width: 33%;
+}
+.footerlinks{
+    width: 55%;
+margin-bottom: 10px;
+font-size: px;
+}
+.footerimg{
+width: 33%;
+
+}
+.copy{
+
+color: white;
+font-size: medium;
+padding-left: 20px;
+padding-top: 130px;
+}
+.info{
+  
+    width: 20%;
+}

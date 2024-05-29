@@ -1,40 +1,337 @@
-.button {
-    font-family:Arial, Helvetica, sans-serif;
-    
-    font-size:34px;
-    
-    border-radius:16px;
-    
-    padding-left:10px;
-    
-    padding-right:10px;
-    
-    padding-top:5px;
-    
-    padding-bottom:5px;
-    
-    color:#ffffff;
-    
-    background-color:#29000c;
-    
-    outline:none;
-    
-    border:none;
-    
-    cursor:pointer;
-    
-    display:inline-block;
-    
-    text-decoration: none;
-    
-    transition: .4s;
-    
+.inicio{
+  width: 1343px;
+  height: 60px;
+  
+  
+  }
+  
+  .borda{
+  
+      margin: 0;
+      padding: 0;
+      height: 2000px;
+  }
+ 
+  .container{
+  background-image: url(fundo.png);
+      margin: 0px;
+      padding: 0px;
+      max-width: 1600px; 
+     margin-top: 0px;    
+      
+     display: grid;
+     grid-template-areas: 
+     "sidenav item item"
+     "sidenav item item"
+     "footer footer footer";
+     grid-gap: 40px;
+      
+  }
+  
+  .sidenav{
+      width: 300px;
+      height: 890px;
+      background: rgb(255,255,255);
+      background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+      border-radius: 20px;
+  grid-area: "sidenav";
+  grid-row: sidenav;
+ 
+  
+  
+  }
+  .item{
+      width: 300px;
+      height: 300px;
+      background-color: solid rgb(0, 0, 0);
+      border-radius: 20px;
+  grid-area: "item";
+  }
+  .footer{
+      width: auto;
+      height: 180px;
+      
+      border-radius: 20px;
+  grid-area: "footer";
+  grid-column: footer;
+  background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(10,27,36,1) 0%, rgba(4,13,18,1) 50%, rgba(0,0,0,1) 88%);
+  }
+  .animacao{
+      
+      width: 100%;
+      margin-top: 60px;
+      max-height: 480px;
+      
+  }
+  body{
+      margin-left: 0;
+      margin-right: 0;
+    margin-top: 0;}
+  
+  .inter{
+  width: 100%;
+  height: 57px;
+  background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(10,27,36,1) 0%, rgba(4,13,18,1) 50%, rgba(0,0,0,1) 88%);
+
+  }
+  
+  
+  .caixas{
+    margin-top: 20px;
+  height: 400px;
+  width: 400px;
+      background-color: #183D3D;
+  }
+  header{
+  max-height: 70px;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(10,27,36,1) 0%, rgba(4,13,18,1) 50%, rgba(0,0,0,1) 88%);
+  }
+  
+  .counter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0 auto;
+  }
+  .menu{
+  
+  width: 55%;
+  }
+  .logo{
+  font-size: 40px;
+      width: 23%;
+      color: white;
+      margin-top: 13px;
+      margin-left: 70px;
+  
+  }
+  .info{
+  
+      width: 20%;
+  }
+    .linkstopo{
+  color: #00a2e8;
+  
+      padding-left: 32px;
+      font-size: medium;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      font-optical-sizing: auto;
+      
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+  
+  .linkstopos{
+      color: rgb(255, 251, 251);
+          padding-left: 62px;
+          font-size: medium;
+          font-family: "Roboto Condensed", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          text-decoration: none;
+          font-optical-sizing: auto;
+          
+      }
+      .promo{
+   
+           margin-left: 10px;
+          width: 380px;
+          border-radius: 15px;
+          margin-top: 15px;
+      }
+      .textopromo{
+  color: white;
+          font-family: "Roboto Condensed", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          text-decoration: none;
+          font-optical-sizing: auto;
+      }
+      h1{
+         text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      h4{
+  
+  text-align: justify;
+  padding-left: 30px;
+  
+  
+      }
+      .promo2{
+   
+          margin-left: 5px;
+         width: 290px;
+         border-radius: 15px;
+         margin-top: 5px;
+         height: 880;
+     }
+     .divi {
+   
+      position: relative;
+      animation-name: example;
+      animation-duration: 1.6s ; 
+      animation-iteration-count: infinite;
+      animation:rotate-center:  infinite; 
+      animation-direction:linear;
     }
     
-    .button:hover {
-    color:#ffffff;
-    
-    background-color:#4a2c1b;
-    
+    @keyframes example {
+      0% { left:40px; top:5px; transform:rotate(0);}
+      5% { left:100px; top:0px;}
+      10%{ left:250px; top:5px;}
+      15%{ left:400px; top:50px;}
+           20%{ left:550px; top:110px;}
+      25%{ left:490px; top:250px;}
+      30%{ left:350px; top:350px;}
+      35%{ left:100px; top:400px;}
+      40%{ left:50px; top:375px;}
+        45%{ left:0px; top:330px;}
+      50%  { left:100px; top:230px;}
+      55%{ left:250px; top:210px;}
+      60%{ left:350px; top:190px;}
+      65%{ left:435px; top:175px;}
+          70%{ left:530px; top:170px;}
+      75%{ left:435px; top:165px;}
+      80%{ left:350px; top:150px;}
+      85%{ left:250px; top:120px;}
+      90%{ left:150px; top:100px;}
+      95%{ left:80px; top:85px;}
+      100% { left:0px; top:30px;transform:rotate(10000000deg);}
     }
     
+    .divu {
+   
+      position: relative;
+      animation-name: exampli;
+      animation-duration: 1.6s ; 
+      animation-iteration-count: infinite;
+      animation-direction:ease-in;
+    }
+    
+    @keyframes exampli {
+      0% { left:970px; top:360px;transform: rotate(0);}
+      5%{ left:820px; top:380px;}
+      10%{ left:720px; top:360px;}
+      15%{ left:590px; top:300px;}
+         20%{ left:500px; top:230px;}
+      25%{ left:580px; top:100px;}
+      30%{ left:680px; top:45px;}
+      35%{ left:780px; top:25px;}
+      40%{ left:900px; top:0px;}
+       45%{ left:990px; top:30px;}
+      50%{ left:970px; top:100px;}
+      55%{ left:850px; top:130px;}
+      60%{ left:720px; top:150px;}
+      65%{ left:620px; top:150px;}
+          70%  { left:530px; top:160px;}
+       75%{ left:630px; top:160px;}
+      80%{ left:720px; top:190px;}
+      85%{ left:850px; top:220px;}
+      90%{ left:950px; top:260px;}
+      95%{ left:990px; top:310px;}
+      100%{ left:970px; top:360px;transform:rotate(10000000deg);}
+     
+  
+    }
+    .arena{
+  width: 100%;
+  height: 523px;
+      background-image: url(dada\ \(1\)\ \(1\).png);
+    }
+  .interface{
+  height: 98vh;
+  scroll-snap-type: y mandator;
+  overflow-y: scroll;
+  }
+  
+  .ble{
+  height: 195vh;
+  scroll-snap-align: start ;
+  position:sticky;
+  top: 0;
+  left: 10;
+  }
+  .intero{
+    width: 100%;
+    height: 17px;
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(10,27,36,1) 0%, rgba(4,13,18,1) 50%, rgba(0,0,0,1) 88%);
+    }
+  
+    .bannerdeitado{
+      background-image:url(bannerdelado.png);
+      width: 1342px;
+      height: 140px; 
+      
+      }
+      .titulobeyblades{
+color: white;
+        margin-top: 0px;
+        padding: 15px;
+        font-size: 70px;
+    }
+    .imagemlogo{
+      transition: all 1s;
+      cursor: pointer;
+  }
+  
+  .imagemlogo:hover{
+      -webkit-transform: rotateZ(360deg);
+      transform: rotateZ(360deg);
+  }
+  .icon{
+
+padding-left: 10px;
+margin-left: 10px;
+
+  }
+  .imagemzoom{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.imagemzoom:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.03);
+}
+.botao{
+
+width: 65px;
+height: 40px;
+color: #fafafa;
+border-radius: 10px ;
+border: 10px black;
+margin-left: 415px;
+padding: 20px;
+background-color: #0c0c0c;
+margin-top: 2.0px;
+box-shadow: 1px 1px 1px 1px #00a2e8 ;
+}
+.footersocial{
+
+  width: 33%;
+  }
+  .footerlinks{
+      width: 55%;
+  margin-bottom: 10px;
+  font-size: px;
+  }
+  .footerimg{
+  width: 33%;
+  
+  }
+  .copy{
+  
+  color: white;
+  font-size: medium;
+  padding-left: 20px;
+  padding-top: 130px;
+  }
+
+  
